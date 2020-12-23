@@ -6,12 +6,6 @@ This example uses [Netlify Functions](https://www.netlify.com/products/functions
 
 [![Deploy with Netlify button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/eduardoboucas/eleventy-blog-staticman)
 
-## Demos
-
-* [Netlify](https://eleventy-base-blog.netlify.com/)
-* [GitHub Pages](https://11ty.github.io/eleventy-base-blog/)
-* [Remix on Glitch](https://glitch.com/~11ty-eleventy-base-blog)
-
 ## Getting Started
 
 ### 1. Clone this Repository
