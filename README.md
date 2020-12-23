@@ -2,11 +2,21 @@
 
 A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator with a commenting system powered by [Staticman](https://staticman.net).
 
-This example uses [Netlify Functions](https://www.netlify.com/products/functions/) to run Staticman, so while it's possible to run it on any deployment provider, the easiest way to get up and running is to deploy with Netlify using the button below.
-
 [![Deploy with Netlify button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/eduardoboucas/eleventy-blog-staticman)
 
 ## Getting Started
+
+This example uses [Netlify Functions](https://www.netlify.com/products/functions/) to run Staticman, so while it's possible to run it on any deployment provider, the easiest way to get up and running is to [deploy with Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/eduardoboucas/eleventy-blog-staticman).
+
+You'll be asked for some parameters during setup:
+
+- **GitHub access token**: A GitHub Personal Access Token used by Staticman to push new comments to your repository on your behalf. See [this guide](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) on how to create one.
+
+- **Repository name**: The name of your GitHub repository, including your username or organization (e.g. `eduardoboucas/eleventy-blog-staticman`).
+
+- **reCAPTCHA site key** and **reCAPTCHA site secret**: If you want to use [reCAPTCHA](https://www.google.com/recaptcha/about/) to protect your form against spam attacks, you should insert your site key and secret, which you can obtain [here](https://www.google.com/recaptcha/admin). If you don't want to use reCAPTCHA, you can leave these blank.
+
+## Local Development
 
 ### 1. Clone this Repository
 
