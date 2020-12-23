@@ -1,10 +1,10 @@
 [build]
   publish = "_site"
-  command = "DEBUG=* eleventy"
+  command = "eleventy"
   functions = "functions"
 
 [template.environment]
   GITHUB_TOKEN = "Insert a GitHub Personal Access Token"
-  REPO = "Insert the path to your repository (e.g. my-user/my-repo)"
+  REPO = "Insert the path to your repository (e.g. your-username/eleventy-blog-staticman)"
   RECAPTCHA_SITE_KEY = "Insert the site key for reCaptcha (optional)"
   RECAPTCHA_SITE_SECRET = "Insert the site secret for reCaptcha (optional)"
