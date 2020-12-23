@@ -7,6 +7,20 @@ templateClass: tmpl-post
 {{ content | safe }}
 
 <hr>
+<h2>Comments</h2>
+
+{%- if (staticmanEntries | length) > 0 %}
+  {%- for entry in staticmanEntries | reverse %}
+    <blockquote>{{ entry.message }} <small>({{ entry.name }}{%- if entry.date %}, {{ entry.date | htmlDateString }}{%- endif %})</small></blockquote>
+  {%- endfor %}
+{%- else %}
+<p>No comments just yet!</p>
+{%- endif %}
+
+<h3>Add a comment</h3>
+{% include "addcomment.njk" %}
+
+<hr>
 <ul>
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
   {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}

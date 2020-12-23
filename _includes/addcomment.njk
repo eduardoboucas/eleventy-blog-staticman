@@ -1,0 +1,26 @@
+<form method="post" action="/.netlify/functions/staticman?branch=master">
+  <p>
+    <label for="name">Name</label>
+    <br>
+    <input id="name" type="text" name="fields[name]" placeholder="John Doe">
+  </p>
+
+  <p>
+    <label for="message">Comment</label>
+    <br>
+    <textarea id="message" name="fields[message]" placeholder="Here's the thing..."></textarea>
+  </p>
+
+  <input type="hidden" name="fields[post]" value="{{ page.fileSlug }}">
+  <input type="hidden" name="options[redirect]" value="/thankyou">
+  <input type="hidden" name="options[redirectError]" value="/error">
+
+  {% if staticman.reCaptchaSiteKey %}
+    <div class="g-recaptcha" data-sitekey="{{ staticman.reCaptchaSiteKey }}"></div>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  {% endif %}
+
+  <p>
+    <button type="submit">Submit</button>
+  </p>
+</form>

@@ -66,6 +66,22 @@ module.exports = function(eleventyConfig) {
     return [...tagSet];
   });
 
+  eleventyConfig.addCollection("postsWithComments", function(collection) {
+    const postsWithComments = new Set();
+
+    collection.getFilteredByTag("posts").forEach(function(item) {
+      const comments = Object.values(item.data.comments)
+        .filter(comment => comment.post === item.fileSlug)
+        .map(comment => ({...comment, date: comment.date && new Date(comment.date)}));
+
+      item.data.staticmanEntries = comments;
+
+      postsWithComments.add(item);
+    });
+
+    return [...postsWithComments];
+  });  
+
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
 
