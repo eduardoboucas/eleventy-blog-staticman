@@ -1,8 +1,10 @@
-# eleventy-base-blog
+# eleventy-blog-staticman
 
-A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
+A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator with a commenting system powered by [Staticman](https://staticman.net).
 
-[![Build Status](https://travis-ci.org/11ty/eleventy-base-blog.svg?branch=master)](https://travis-ci.org/11ty/eleventy-base-blog)
+This example uses [Netlify Functions](https://www.netlify.com/products/functions/) to run Staticman, so while it's possible to run it on any deployment provider, the easiest way to get up and running is to deploy with Netlify using the button below.
+
+[![Deploy with Netlify button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/eduardoboucas/eleventy-blog-staticman)
 
 ## Demos
 
@@ -10,19 +12,12 @@ A starter repository showing how to build a blog with the [Eleventy](https://git
 * [GitHub Pages](https://11ty.github.io/eleventy-base-blog/)
 * [Remix on Glitch](https://glitch.com/~11ty-eleventy-base-blog)
 
-## Deploy this to your own site
-
-These builders are amazing—try them out to get your own Eleventy site in a few clicks!
-
-* [Get your own Eleventy web site on Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/eleventy-base-blog)
-* [Get your own Eleventy web site on Vercel](https://vercel.com/import/project?template=11ty%2Feleventy-base-blog)
-
 ## Getting Started
 
 ### 1. Clone this Repository
 
 ```
-git clone https://github.com/11ty/eleventy-base-blog.git my-blog-name
+git clone https://github.com/eduardoboucas/eleventy-blog-staticman.git my-blog-name
 ```
 
 
